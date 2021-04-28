@@ -1,0 +1,20 @@
+I"�
+<ul>
+  <li><a href="#download">Download</a></li>
+  <li><a href="#instalação">Instalação</a></li>
+  <li><a href="#pontos-de-montagem">Pontos de montagem</a></li>
+  <li><a href="#instalação-dos-pacotes-base-do-arch">Instalação dos pacotes base do Arch</a></li>
+  <li><a href="#vamos-gerar-a-nossa-tabela-fstab">Vamos gerar a nossa tabela FSTAB</a></li>
+  <li><a href="#chroot">Chroot</a></li>
+  <li><a href="#definindo-horário">Definindo Horário</a></li>
+  <li><a href="#definindo-variável-de-linguagem">Definindo variável de linguagem</a></li>
+  <li><a href="#definindo-teclado-abnt2">Definindo teclado abnt2</a></li>
+  <li><a href="#definindo-host">Definindo host</a></li>
+  <li><a href="#senha-root">senha root</a></li>
+  <li><a href="#criando-user">criando user</a></li>
+  <li><a href="#instalar-pacotes-uteis">Instalar pacotes uteis</a></li>
+  <li><a href="#sudoers">Sudoers</a></li>
+  <li><a href="#efiboot">EFIboot</a></li>
+  <li><a href="#instalação-concluida">Instalação concluida</a></li>
+</ul>
+:ET

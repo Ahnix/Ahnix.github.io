@@ -1,0 +1,64 @@
+I"<p>Hi, my name is Ramon Almeida. I`m web developer :D</p>
+
+<h1 id="experiences">Experiences</h1>
+<p>author_work_experiences:
+            - company_name: Explicae
+              company_logo: explicae.png
+              company_url: https://explicae.com.br
+              designation: Back-End Developer
+              description: Worked on various Explicae Products
+              visibility: true
+            - company_name: Diwe
+              company_logo: diwe.png
+              company_url: https://diwe.com.br
+              designation: Back-End Developer
+              description: Worked on various Diwe Products
+              visibility: true</p>
+
+<h1 id="education">Education</h1>
+<p>author_education_details:
+              - college_logo: estacio.png
+                college_name: UNESA
+                college_url: https://estacio.br
+                college_degree: Software Engineer
+                description: Bachelor of Technology
+                visibility: true</p>
+
+<h1 id="projects">Projects</h1>
+<p>author_project_details:
+              - project_thumbnail: ahnix.png
+                project_title: Ahnix
+                project_description: A developers corporation.
+                project_url: https://ahnix.github.io
+                visibility: true</p>
+
+<h1 id="social-links">social links</h1>
+<p>twitter_username: RamonAlmeida_
+github_username:  ahnix</p>
+
+<section class="post-comments">
+
+  
+    <div id="disqus_thread"></div>
+    <script>
+    
+    var disqus_config = function () {
+        this.page.url = "https://ahnixx.github.io/about/";
+        this.page.identifier = "/about/";
+    };
+    var disqus_shortname = 'almeidaramon';
+    
+    (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript><a href="http://disqus.com/?ref_noscript"> Disqus </a>JavaScript</noscript>
+    
+  
+
+</section>
+
+:ET

@@ -1,0 +1,14 @@
+I"�<p><img src="/images/webstorm.png" style="width: 286px; height: 180px;" /></p>
+
+<h2 id="instalação">Instalação</h2>
+
+<p> O primeiro passo é ter o webstorm instalado e licenciado.
+Em seguida clicar em tools-&gt;create a command line launcher, conforme img abaixo.
+</p>
+<p><img src="/images/tools-create comandline.png" style="width: 286px; height: 180px;" />&gt;</p>
+
+<p>Automaticamente ele já preeenche com a locate do bin.
+Basta clicar em ok, abrir o terminal e digital -&gt; webstorm .
+</p>
+
+:ET

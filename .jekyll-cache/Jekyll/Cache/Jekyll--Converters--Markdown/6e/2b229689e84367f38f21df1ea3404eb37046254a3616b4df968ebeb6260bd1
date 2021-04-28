@@ -1,0 +1,36 @@
+I"�	<p><img src="/images/dockpsql.png" style="width: 286px; height: 180px;" /></p>
+
+<p> Instalando docker e containers do postgresql "psql". </p>
+
+<h2 id="obtendo-as-imagens-necessárias">Obtendo as imagens necessárias</h2>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">docker pull dpage/pgadmin4</code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">docker pull postgres</code></pre></figure>
+
+<h2 id="criando-rede-bridge-para-o-postgres-rodar">Criando rede bridge para o postgres rodar</h2>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">docker network create <span class="nt">--driver</span> bridge postgres-network</code></pre></figure>
+
+<h2 id="obtendo-as-imagens-necessárias-1">Obtendo as imagens necessárias</h2>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">docker run <span class="nt">--name</span> postgres <span class="nt">--network</span><span class="o">=</span>postgres-network <span class="nt">-e</span> <span class="s2">"POSTGRES_PASSWORD=suasenha"</span> <span class="nt">-p</span> 5432:5432 <span class="nt">-v</span> ~/PostgreSQL:/var/lib/postgresql/data <span class="nt">-d</span> postgres</code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">docker run <span class="nt">--name</span> pgadmin <span class="nt">--network</span><span class="o">=</span>postgres-network <span class="nt">-p</span> 15432:80 <span class="nt">-e</span> <span class="s2">"PGADMIN_DEFAULT_EMAIL=ramon@gmail.com"</span> <span class="nt">-e</span> <span class="s2">"PGADMIN_DEFAULT_PASSWORD=suasenha"</span> <span class="nt">-d</span> dpage/pgadmin4</code></pre></figure>
+
+<h2 id="acesso-pgadmin">Acesso PGADMIN</h2>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">http://localhost:15432</code></pre></figure>
+
+<h2 id="acesso-console">Acesso console</h2>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">ifconfig docker0</code></pre></figure>
+
+<p>Colete o ip e efetue Acesso.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">psql <span class="nt">-U</span> postgres <span class="nt">-h</span> <span class="s2">"ip coletado"</span></code></pre></figure>
+
+<h2 id="screenshots">Screenshots</h2>
+<p><img src="/images/pgadmin.png" alt="pgadmin" />
+<img src="/images/pgadmin1.png" alt="pgadmin" /></p>
+:ET
