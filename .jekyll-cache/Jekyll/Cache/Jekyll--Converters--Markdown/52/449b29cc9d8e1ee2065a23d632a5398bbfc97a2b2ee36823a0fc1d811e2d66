@@ -1,21 +1,18 @@
-I")<p>Hi, my name is Ramon Almeida. I`m web developer :D</p>
+I"‡<p>Hi, my name is Ramon Almeida. I`m web developer :D</p>
 
 <h1 id="experiences">Experiences</h1>
-<p><img src="/images/explicae.png" style="width: 286px; height: 180px;" /></p>
+<p><img src="/images/explicae.png" style="width: 200px; height: 180px;" /></p>
 
 <figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="w">    </span><span class="err">explicae:</span><span class="p">{</span><span class="w">
             </span><span class="err">-</span><span class="w"> </span><span class="err">company_name:</span><span class="w"> </span><span class="err">Explicae</span><span class="w">
               </span><span class="err">company_url:</span><span class="w"> </span><span class="err">https://explicae.com.br</span><span class="w">
               </span><span class="err">designation:</span><span class="w"> </span><span class="err">Back-End</span><span class="w"> </span><span class="err">Developer</span><span class="w">
               </span><span class="err">description:</span><span class="w"> </span><span class="err">Worked</span><span class="w"> </span><span class="err">on</span><span class="w"> </span><span class="err">various</span><span class="w"> </span><span class="err">Explicae</span><span class="w"> </span><span class="err">Products</span><span class="w">
-            </span><span class="p">}</span><span class="w">
-            </span></code></pre></figure>
+            </span><span class="p">}</span></code></pre></figure>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        &lt;img src="/images/diwe.png" style="width: 286px; height: 180px;"&gt;
-</code></pre></div></div>
+<p><img src="/images/diwe.png" style="width: 200px; height: 180px;" /></p>
 
 <figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="w">    </span><span class="err">Diwe:</span><span class="p">{</span><span class="w">
-        </span><span class="err">&lt;img</span><span class="w"> </span><span class="err">src=</span><span class="s2">"/images/diwe.png"</span><span class="w"> </span><span class="err">style=</span><span class="s2">"width: 286px; height: 180px;"</span><span class="err">&gt;</span><span class="w">
             </span><span class="err">-</span><span class="w"> </span><span class="err">company_name:</span><span class="w"> </span><span class="err">Diwe</span><span class="w">
               </span><span class="err">company_url:</span><span class="w"> </span><span class="err">https://diwe.com.br</span><span class="w">
               </span><span class="err">designation:</span><span class="w"> </span><span class="err">Back-End</span><span class="w"> </span><span class="err">Developer</span><span class="w">
@@ -23,10 +20,10 @@
             </span><span class="p">}</span></code></pre></figure>
 
 <h1 id="education">Education</h1>
+<p><img src="/images/estacio.png" style="width: 200px; height: 180px;" /></p>
 
 <figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="w">                </span><span class="p">{</span><span class="w">
-              </span><span class="err">&lt;img</span><span class="w"> </span><span class="err">src=</span><span class="s2">"/images/estacio.png"</span><span class="w"> </span><span class="err">style=</span><span class="s2">"width: 286px; height: 180px;"</span><span class="err">&gt;</span><span class="w">
-                </span><span class="err">-college_name:</span><span class="w"> </span><span class="err">UNESA</span><span class="w">
+              </span><span class="err">-</span><span class="w"> </span><span class="err">college_name:</span><span class="w"> </span><span class="err">UNESA</span><span class="w">
                 </span><span class="err">college_url:</span><span class="w"> </span><span class="err">https://estacio.br</span><span class="w">
                 </span><span class="err">college_degree:</span><span class="w"> </span><span class="err">Software</span><span class="w"> </span><span class="err">Engineer</span><span class="w">
                 </span><span class="err">description:</span><span class="w"> </span><span class="err">Bachelor</span><span class="w"> </span><span class="err">of</span><span class="w"> </span><span class="err">Technology</span><span class="w">
@@ -34,18 +31,14 @@
                 </span></code></pre></figure>
 
 <h1 id="projects">Projects</h1>
+<p><img src="/images/ahnix.png" style="width: 200px; height: 180px;" /></p>
 
 <figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="w">            </span><span class="p">{</span><span class="w">
-            </span><span class="err">&lt;img</span><span class="w"> </span><span class="err">src=</span><span class="s2">"/images/ahnix.png"</span><span class="w"> </span><span class="err">style=</span><span class="s2">"width: 286px; height: 180px;"</span><span class="err">&gt;</span><span class="w">
-                </span><span class="err">-project_title:</span><span class="w"> </span><span class="err">Ahnix</span><span class="w">
+              </span><span class="err">-</span><span class="w"> </span><span class="err">project_title:</span><span class="w"> </span><span class="err">Ahnix</span><span class="w">
                 </span><span class="err">project_description:</span><span class="w"> </span><span class="err">A</span><span class="w"> </span><span class="err">developers</span><span class="w"> </span><span class="err">corporation.</span><span class="w">
                 </span><span class="err">project_url:</span><span class="w"> </span><span class="err">https://ahnix.github.io</span><span class="w">
             </span><span class="p">}</span><span class="w">
                 </span></code></pre></figure>
-
-<h1 id="social-links">social links</h1>
-<p>twitter_username: RamonAlmeida_
-github_username:  ahnix</p>
 
 <section class="post-comments">
 

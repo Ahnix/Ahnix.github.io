@@ -2,7 +2,7 @@
 layout: post
 title: "Instalando  Jekyll on mac."
 date: 2020-12-01 11:01:02
-image: '/images/skell/jekyll.png'
+image: '/images/jekyll.png'
 description: "Instalando  Jekyll on mac."
 tags:
 - macbook
@@ -10,7 +10,7 @@ tags:
 - mac
 ---
 
-<img src="/images/skell/jekyll.png" style="width: 286px; height: 180px;">
+<img src="/images/jekyll.png" style="width: 286px; height: 180px;">
 
 
 ## Instalação

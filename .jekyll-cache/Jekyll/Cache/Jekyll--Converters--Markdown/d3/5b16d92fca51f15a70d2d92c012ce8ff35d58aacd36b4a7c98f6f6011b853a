@@ -1,0 +1,104 @@
+I"{<p><img src="/images/arch.jpg" style="width: 286px; height: 180px;" /></p>
+
+<h2 id="download">Download</h2>
+<p> Você encontra a ISOs para download do Arch Linux <a href="https://www.archlinux.org/download/"> Clique Aqui!</a></p>
+<p> Depois é só usar um pen drive bootável da distro.</p>
+
+<h2 id="instalação">Instalação</h2>
+
+<p> O primeiro passo é ajustar o seu teclado</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">loadkeys br-abnt2</code></pre></figure>
+
+<p>Toda a instalação do Arch precisa de acesso à internet, por isso é importante que você esteja conectado.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">ping 1.1.1.1</code></pre></figure>
+
+<p>Caso você tenha Wi-Fi:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">wifi-menu</code></pre></figure>
+
+<p>O próximo passo é conferir as suas partições</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">fdisk <span class="nt">-l</span> /dev/sda</code></pre></figure>
+
+<p>Defina suas partições conforme seu hd ou seu gosto.</p>
+<p>No meu caso ficou:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">/dev/sda1 <span class="o">(</span>500MB para o /boot/efi<span class="o">)</span>
+/dev/sda2 <span class="o">(</span>todo o resto para o /<span class="o">)</span></code></pre></figure>
+
+<p>O GRUB no meu caso a /dev/sda1/ type EFI BIOS . O próximo passo é formatá-las:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">mkfs.fat <span class="nt">-F32</span> /dev/sda1</code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">mkfs.ext4 /dev/sda2</code></pre></figure>
+
+<h2 id="pontos-de-montagem">Pontos de montagem</h2>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">mount /dev/sda2 /mnt</code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">mkdir</span> /mnt/boot/efi</code></pre></figure>
+
+<h2 id="instalação-dos-pacotes-base-do-arch">Instalação dos pacotes base do Arch</h2>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">pacstrap /mnt base base-devel linux linux-firmware</code></pre></figure>
+
+<h2 id="vamos-gerar-a-nossa-tabela-fstab">Vamos gerar a nossa tabela FSTAB</h2>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">genfstab <span class="nt">-U</span> <span class="nt">-p</span> /mnt <span class="o">&gt;&gt;</span> /mnt/etc/fstab</code></pre></figure>
+
+<h2 id="chroot">Chroot</h2>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">arch-chroot /mnt</code></pre></figure>
+
+<h2 id="definindo-horário">Definindo Horário</h2>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">ln</span> <span class="nt">-sf</span> /usr/share/zoneinfo/America/Bahia /etc/localtime</code></pre></figure>
+
+<h2 id="definindo-variável-de-linguagem">Definindo variável de linguagem</h2>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">echo </span><span class="nv">LANG</span><span class="o">=</span>pt_BR.UTF-8 <span class="o">&gt;&gt;</span> /etc/locale.conf</code></pre></figure>
+
+<h2 id="definindo-teclado-abnt2">Definindo teclado abnt2</h2>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">echo </span><span class="nv">KEYMAP</span><span class="o">=</span>br-abnt2 <span class="o">&gt;&gt;</span> /etc/vconsole.conf</code></pre></figure>
+
+<h2 id="definindo-host">Definindo host</h2>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">echo</span> <span class="s2">"arch"</span> <span class="o">&gt;&gt;</span> /etc/hosts</code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">echo</span> <span class="s2">"127.0.0.1      localhost.localdomain            localhost"</span> <span class="o">&gt;&gt;</span> /etc/hosts</code></pre></figure>
+
+<h2 id="senha-root">senha root</h2>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">passwd</code></pre></figure>
+
+<h2 id="criando-user">criando user</h2>
+
+<p>Troque o archuser pelo seu nome de usuario</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">useradd <span class="nt">-m</span> <span class="nt">-g</span> <span class="nb">users</span> <span class="nt">-G</span> wheel archuser</code></pre></figure>
+
+<h2 id="instalar-pacotes-uteis">Instalar pacotes uteis</h2>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">pacman <span class="nt">-S</span> dosfstools os-prober mtools network-manager-applet networkmanager wpa_supplicant wireless_tools dialog <span class="nb">sudo </span>dhclient wget vim nano screen  </code></pre></figure>
+
+<h2 id="sudoers">Sudoers</h2>
+<p>Troque o archuser pelo seu nome de usuario</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">archuser <span class="nv">ALL</span><span class="o">=(</span>ALL<span class="o">)</span> ALL</code></pre></figure>
+
+<h2 id="efiboot">EFIboot</h2>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">pacman <span class="nt">-S</span> grub-efi-x86_64 efibootmgr</code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">grub-install <span class="nt">--target</span><span class="o">=</span>x86_64-efi <span class="nt">--efi-directory</span><span class="o">=</span>/boot/efi <span class="nt">--bootloader-id</span><span class="o">=</span>arch_grub <span class="nt">--recheck</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cp</span> /usr/share/locale/en@quot/LC_MESSAGES/grub.mo /boot/grub/locale/en.mo</code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">grub-mkconfig <span class="nt">-o</span> /boot/grub/grub.cfg</code></pre></figure>
+
+<h2 id="instalação-concluida">Instalação concluida</h2>
+<p>Agora basta efetuar um crtl+d e reboot</p>
+:ET

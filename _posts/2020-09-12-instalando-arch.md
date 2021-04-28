@@ -2,7 +2,7 @@
 layout: post
 title: "Instalando Arch"
 date: 2020-09-12 11:01:02
-image: '/images/skell/arch.jpg'
+image: '/images/arch.png'
 description: "Instalando Arch linux do zero."
 tags:
 - Arch
@@ -10,7 +10,7 @@ tags:
 - linux
 ---
 
-<img src="/images/skell/arch.jpg" style="width: 286px; height: 180px;">
+<img src="/images/arch.png" style="width: 286px; height: 180px;">
 
 ## Download
 <p> Você encontra a ISOs para download do Arch Linux <a href="https://www.archlinux.org/download/"> Clique Aqui!</a></p>

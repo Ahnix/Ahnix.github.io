@@ -49,11 +49,7 @@ Hi, my name is Ramon Almeida. I`m web developer :D
                 project_url: https://ahnix.github.io
             }
                 {% endhighlight %}
-              
 
-# social links
-<a href="https://twitter.com/ramonalmeida_?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="true">Follow @RamonAlmeida_</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<a class="github-button" href="https://github.com/ahnix" data-size="large" data-color-scheme="no-preference: dark; light: dark; dark: dark;" data-show-count="true" aria-label="Follow @ahnix on GitHub">Follow @{{ site.github_username }}</a>
 
 {% include comments.html %}
 
