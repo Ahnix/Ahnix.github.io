@@ -8,7 +8,7 @@ Hi, my name is Ramon Almeida. I`m web developer :D
 
 
 # Experiences
-<img src="/images/explicae.png" style="width: 286px; height: 180px;">
+<img src="/images/explicae.png" style="width: 200px; height: 180px;">
 {% highlight json %}
     explicae:{
             - company_name: Explicae
@@ -18,7 +18,7 @@ Hi, my name is Ramon Almeida. I`m web developer :D
             }
 {% endhighlight %}
 
-<img src="/images/diwe.png" style="width: 286px; height: 180px;">
+<img src="/images/diwe.png" style="width: 200px; height: 180px;">
 
 {% highlight json %}
     Diwe:{
@@ -30,11 +30,10 @@ Hi, my name is Ramon Almeida. I`m web developer :D
 {% endhighlight %}
 
 # Education
- <img src="/images/estacio.png" style="width: 286px; height: 180px;">
+ <img src="/images/estacio.png" style="width: 200px; height: 180px;">
 {% highlight json %}
                 {
-             
-                -college_name: UNESA
+              - college_name: UNESA
                 college_url: https://estacio.br
                 college_degree: Software Engineer
                 description: Bachelor of Technology
@@ -42,10 +41,10 @@ Hi, my name is Ramon Almeida. I`m web developer :D
                 {% endhighlight %}
 
 # Projects
- <img src="/images/ahnix.png" style="width: 286px; height: 180px;">
+ <img src="/images/ahnix.png" style="width: 200px; height: 180px;">
 {% highlight json %}
             {
-                -project_title: Ahnix
+              - project_title: Ahnix
                 project_description: A developers corporation.
                 project_url: https://ahnix.github.io
             }
@@ -53,8 +52,8 @@ Hi, my name is Ramon Almeida. I`m web developer :D
               
 
 # social links
-twitter_username: RamonAlmeida_
-github_username:  ahnix
+<a href="https://twitter.com/ramonalmeida_?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="true">Follow @RamonAlmeida_</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<a class="github-button" href="https://github.com/ahnix" data-size="large" data-color-scheme="no-preference: dark; light: dark; dark: dark;" data-show-count="true" aria-label="Follow @ahnix on GitHub">Follow @{{ site.github_username }}</a>
 
 {% include comments.html %}
 
