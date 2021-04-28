@@ -3,6 +3,7 @@ layout: page
 title: Sobre 
 ---
 
+<img src="/images/profile.png" style="width: 200px; height: 190px;">
 Hi, my name is Ramon Almeida. I`m web developer :D
 
 
