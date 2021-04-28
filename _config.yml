@@ -6,7 +6,7 @@ description: Web developer and coffee drinker.
 avatarTitle: Ramon Almeida
 # 头像里面的描述
 avatarDesc: Web Dev / coffee drinker
-url: "https://ahnixx.github.io"
+url: "https://ramalmeida.github.io"
 
 # 博客是否自动生成目录，false为不生成
 enableToc: true
@@ -20,7 +20,7 @@ comment:
 # Social
 social:
     #weibo: 5366874726 
-    github: ahnix
+    github: ramalmeida
     # zhihu: panpanleopard
     # juejin: xxx
     #jianshu: 2ada30d8d0f7
