@@ -4,7 +4,8 @@ title: Sobre
 ---
 
 
-<img src="/images/proflie.png" style="width: 200px; height: 190px;">
+<img src="/images/profile.png" style="width: 200px; height: 190px;">
+
 <br>
 <p>Hi, my name is Ramon Almeida. I`m web developer and coffee drinker XD</p>
 <p>Sklils:</p>
