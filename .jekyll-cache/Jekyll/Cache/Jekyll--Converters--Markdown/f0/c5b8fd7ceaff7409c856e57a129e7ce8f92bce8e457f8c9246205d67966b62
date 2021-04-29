@@ -1,11 +1,11 @@
-I"»<section class="post-comments">
+I"¿<section class="post-comments">
 
   
     <div id="disqus_thread"></div>
     <script>
     
     var disqus_config = function () {
-        this.page.url = "https://ahnixx.github.io/support/";
+        this.page.url = "https://ramalmeida.github.io/support/";
         this.page.identifier = "/support/";
     };
     var disqus_shortname = 'almeidaramon';

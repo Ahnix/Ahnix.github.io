@@ -1,4 +1,4 @@
-I"Œ<p><img src="/images/proflie.png" style="width: 200px; height: 190px;" />
+I"­<p><img src="/images/proflie.png" style="width: 200px; height: 190px;" />
 <br /></p>
 <p>Hi, my name is Ramon Almeida. I`m web developer and coffee drinker XD</p>
 <p>Sklils:</p>
@@ -7,7 +7,8 @@
 <li>NodeJs (loopback/express/adonis)</li>
 <li>ReactJs</li>
 <li>VueJs</li>
-<li>Ios/Xcode, Quasar/cordova</li>
+<li>Ios/Swift, Quasar/cordova</li>
+<li>Flutter noobie</li>
 <li>Dbs -&gt; Sql/NoSQL (mongodb,dynamodb,mysql,postgresql)</li>
 </ul>
 
@@ -47,7 +48,7 @@
 <figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="w">            </span><span class="p">{</span><span class="w">
               </span><span class="err">-</span><span class="w"> </span><span class="err">project_title:</span><span class="w"> </span><span class="err">Ahnix</span><span class="w">
                 </span><span class="err">project_description:</span><span class="w">  </span><span class="err">Dev</span><span class="w"> </span><span class="err">corporation.</span><span class="w">
-                </span><span class="err">project_url:</span><span class="w"> </span><span class="err">https://ahnix.github.io</span><span class="w">
+                </span><span class="err">project_url:</span><span class="w"> </span><span class="err">https://ramalmeida.github.io</span><span class="w">
             </span><span class="p">}</span><span class="w">
                 </span></code></pre></figure>
 
@@ -58,7 +59,7 @@
     <script>
     
     var disqus_config = function () {
-        this.page.url = "https://ahnixx.github.io/about/";
+        this.page.url = "https://ramalmeida.github.io/about/";
         this.page.identifier = "/about/";
     };
     var disqus_shortname = 'almeidaramon';
