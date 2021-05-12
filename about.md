@@ -9,39 +9,16 @@ title: Sobre
 <br>
 <p>Hi, my name is Ramon Almeida. I`m web developer and coffee drinker XD</p>
 <p>Sklils:</p>
-<ul> 
+<ul>
+<li>Python(Django)</li> 
 <li>Js</li>
 <li>NodeJs (loopback/express/adonis)</li>
 <li>ReactJs</li>
-<li>VueJs</li>
 <li>Ios/Swift, Quasar/cordova</li>
-<li>Flutter noobie</li>
-<li>Dbs -> Sql/NoSQL (mongodb,dynamodb,mysql,postgresql)</li>
+<li>Flutter rookie</li>
+<li>Dbs -> NoSQL/Sql (mongodb,dynamodb,mysql,postgresql)</li>
+<li>Aws is like a 127.0.0.1 </li>
 </ul>
-
-
-
-## Experiences
-<img src="/images/explicae.png" style="width: 200px; height: 180px;">
-{% highlight json %}
-    explicae:{
-            - company_name: Explicae
-              company_url: https://explicae.com.br
-              designation: Back-End Developer
-              description: Worked on various Explicae Products
-            }
-{% endhighlight %}
-
-<img src="/images/diwe.png" style="width: 200px; height: 180px;">
-
-{% highlight json %}
-    Diwe:{
-            - company_name: Diwe
-              company_url: https://diwe.com.br
-              designation: Back-End Developer
-              description: Worked on various Diwe Products
-            }
-{% endhighlight %}
 
 ## Education
  <img src="/images/estacio.png" style="width: 200px; height: 180px;">
